@@ -1,3 +1,4 @@
+
 public class SimpleDate {
     private int day;
     private int month;
@@ -6,6 +7,10 @@ public class SimpleDate {
         this.day=day;
         this.month=month;
         this.year=year;
+    }
+    @Override
+    public int hashCode(){
+        return (int) year*month*day;//maybe use pow((year*day),month) to get more distinct results
     }
     @Override
     public boolean equals(Object object){
