@@ -7,10 +7,11 @@ public class Main {
         hashMap.put("etc.", "and so on");
         hashMap.put("i.e", "more precisely");
 
-        Programm.printKeys(hashMap);
+        /*Programm.printKeys(hashMap);
         System.out.println("---");
         Programm.printKeysWhere(hashMap, "i");
         System.out.println("---");
-        Programm.printValuesOfKeysWhere(hashMap, ".e");
+        Programm.printValuesOfKeysWhere(hashMap, ".e");*/
+        System.out.println(hashMap.hashCode());
     }
 }
